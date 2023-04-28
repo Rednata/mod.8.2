@@ -29,8 +29,6 @@ console.log('mazda: ', mazda.needPetrol());
 console.log('mazda: ', mazda.fillUp());
 console.log('mazda: ', mazda.needPetrol());
 
-// console.log(bmw);
-
 //  Создание наследования
 
 const PassangerCar = function(brand, model, maxTank, typeFuel = 'petrol') {
@@ -44,7 +42,6 @@ const Truck = function(brand, model, maxTank, typeFuel = 'petrol') {
   this.typeFuel - typeFuel;
   this.typeCar = 'truck'
 };
-
 
 // PassangerCar.prototype = new Car();
 // PassangerCar.prototype.constructor = PassangerCar;
