@@ -40,27 +40,27 @@ export class RenderStation {
     return list;
   }
 
-    createColumns() {
-      const columns = document.createElement('ul');
-      columns.classList.add('columns');
+  createColumns() {
+    const columns = document.createElement('ul');
+    columns.classList.add('columns');
 
-      this.station.filling.forEach(column => {
-        const itemColumn = document.createElement('li');
-        itemColumn.classList.add(column.type);
+    this.station.filling.forEach(column => {
+      const itemColumn = document.createElement('li');
+      itemColumn.classList.add(column.type);
 
-        const columnName = document.createElement('p');
-        columnName.textContent = column.type;
-        itemColumn.append(columnName);
+      const columnName = document.createElement('p');
+      columnName.textContent = column.type;
+      itemColumn.append(columnName);
 
-        if (column.car) {
-          const itemCar = document.createElement('p');
-          const car = column.car;
-          itemCar.textContent = car.getTitle();
-          itemCar.classList.add(car.typeCar);
-          itemColumn.append(itemCar);          
-        }
-        columns.append(itemColumn);
-      });
-      return columns;
+      if (column.car) {
+        const itemCar = document.createElement('p');
+        const car = column.car;
+        itemCar.textContent = car.getTitle();
+        itemCar.classList.add(car.typeCar);
+        itemColumn.append(itemCar);          
+      }
+      columns.append(itemColumn);
+    });
+    return columns;
   }
 }

@@ -38,13 +38,18 @@ const getTestCar = () => {
 const station = new Station([
   {
     type: 'petrol',
-    count: 2,
-    speed: 5,
+    // count: 2,
+    // speed: 5,
   },
   {
     type: 'diesel',
-    count: 1,
-    speed: 20,
+    // count: 1,
+    // speed: 20,
+  },
+  {
+    type: 'gas',
+    // count: 1,
+    // speed: 20,
   },
 ], '.app');
 

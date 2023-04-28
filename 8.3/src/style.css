@@ -35,6 +35,27 @@ ul {
   list-style-image: url(assets/img/icon-park-outline_petrol.svg);
 }
 
+.gas {
+  display: flex;
+  align-items: flex-end;
+}
+
+.gas:before {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-image: url(assets/img/gas-station.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* list-style-image: url(assets/img/gas-station.svg); */
+}
+
+.gas::marker{
+  font-size: 20px;
+}
+
 .passanger {
   padding-left: 20px;
   background-image: url(assets/img/clarity_car-solid.svg);
