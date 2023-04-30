@@ -43,7 +43,7 @@ export class RenderStation {
   createColumns() {
     const columns = document.createElement('ul');
     columns.classList.add('columns');
-
+    console.warn(this);
     this.station.filling.forEach(column => {
       const itemColumn = document.createElement('li');
       itemColumn.classList.add(column.type);

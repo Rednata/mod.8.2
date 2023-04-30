@@ -9,6 +9,7 @@ export class Station {
     this.typeStation = typeStation;
     this.renderApp = renderApp;
     this.renderStation = null;
+    console.warn(typeStation);
   }
 
   get filling() {
@@ -31,6 +32,7 @@ export class Station {
   createColumn() {
     for (const optionStation of this.typeStation) {
       const count = optionStation.count || 1;
+      const speed = optionStation.speed || 5;
       for (let i = 0; i < count; i++) {
         this.#filling.push(new Column(optionStation.type, optionStation.speed));
       }
